@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       // This theme was made for FlexColorScheme version 6.1.1. Make sure
       // you use same or higher version, but still same major version. If
       // you use a lower version, some properties may not be supported. In
