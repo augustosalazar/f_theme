@@ -22,45 +22,33 @@ class MyApp extends StatelessWidget {
       // you use a lower version, some properties may not be supported. In
       // that case you can also remove them after copying the theme to your app.
       theme: FlexThemeData.light(
-        colors: const FlexSchemeColor(
-          primary: Color(0xff810048),
-          primaryContainer: Color(0xffd0e4ff),
-          secondary: Color(0xffac3306),
-          secondaryContainer: Color(0xffffdbcf),
-          tertiary: Color(0xff006875),
-          tertiaryContainer: Color(0xff95f0ff),
-          appBarColor: Color(0xffffdbcf),
-          error: Color(0xffb00020),
-        ),
+        scheme: FlexScheme.purpleM3,
         surfaceMode: FlexSurfaceMode.levelSurfacesLowScaffold,
-        blendLevel: 9,
+        blendLevel: 7,
         subThemesData: const FlexSubThemesData(
           blendOnLevel: 10,
           blendOnColors: false,
+          useM2StyleDividerInM3: true,
         ),
         visualDensity: FlexColorScheme.comfortablePlatformDensity,
+        useMaterial3: true,
+        swapLegacyOnMaterial3: true,
         // To use the playground font, add GoogleFonts package and uncomment
-        fontFamily: GoogleFonts.notoSans().fontFamily,
+        // fontFamily: GoogleFonts.notoSans().fontFamily,
       ),
       darkTheme: FlexThemeData.dark(
-        colors: const FlexSchemeColor(
-          primary: Color(0xff9fc9ff),
-          primaryContainer: Color(0xff00325b),
-          secondary: Color(0xffffb59d),
-          secondaryContainer: Color(0xff872100),
-          tertiary: Color(0xff86d2e1),
-          tertiaryContainer: Color(0xff004e59),
-          appBarColor: Color(0xff872100),
-          error: Color(0xffcf6679),
-        ),
+        scheme: FlexScheme.purpleM3,
         surfaceMode: FlexSurfaceMode.levelSurfacesLowScaffold,
-        blendLevel: 15,
+        blendLevel: 13,
         subThemesData: const FlexSubThemesData(
           blendOnLevel: 20,
+          useM2StyleDividerInM3: true,
         ),
         visualDensity: FlexColorScheme.comfortablePlatformDensity,
+        useMaterial3: true,
+        swapLegacyOnMaterial3: true,
         // To use the Playground font, add GoogleFonts package and uncomment
-        fontFamily: GoogleFonts.notoSans().fontFamily,
+        // fontFamily: GoogleFonts.notoSans().fontFamily,
       ),
 
       // Use dark or light theme based on system setting.
